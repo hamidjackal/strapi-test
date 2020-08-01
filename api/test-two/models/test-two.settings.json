@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "test_twos",
+  "info": {
+    "name": "TestTwo"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "test": {
+      "type": "string"
+    },
+    "test_one": {
+      "model": "test-one",
+      "via": "test_twos"
+    }
+  }
+}
